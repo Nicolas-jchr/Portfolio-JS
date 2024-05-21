@@ -68,36 +68,80 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--primary-color-4);
+    background-color: var(--primary-color-5);
 }
 
 #profil-picture {
     display: flex;
     justify-content: center;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
+    height: 20rem;
+    width: auto;
+    border-radius: 60%;
     margin-top: 7rem;
 }
 
 /* PROJECTS */
 
-h1, h2 {
-    font-size: 5rem;
-    font-family: var(--primary-font);
-}
-
-#projet {
+h2 {
     display: flex;
     justify-content: center;
-    background-color: var(--primary-color-2)
+    font-size: 5rem;
+    font-family: var(--primary-font);
+    color: var(--primary-color-5);
 }
 
 .project-list {
+    background-color: var(--primary-color-2);
+}
+
+.project-cases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--primary-color-2);
+}
+
+.project-cases article {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    background-color: var(--primary-color-3);
+    border-radius: 10px;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+.project-cases img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-bottom: 2px solid var(--primary-color-1);
+}
+
+.project-cases button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: var(--primary-color-1);
+    color: var(--primary-color-5);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-cases button:hover {
+    background-color: var(--primary-color-1);
+}
+
+/* COMPETENCES */
+
+
 
 /* ABOUT */ 
 
