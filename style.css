@@ -69,3 +69,44 @@ header {
     margin-top: 7rem;
 }
 
+/* PROJECTS */
+
+h1, h2 {
+    font-size: 5rem;
+}
+
+#projet {
+    display: flex;
+    justify-content: center;
+    background-color: orange;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ABOUT */ 
+
+#about {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: rosybrown;
+}
+
+/* CONTACT */ 
+
+#contact {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #1C2942;
+}
+
+/* FOOTER */ 
+
+footer {
+    background-color: brown;
+}
