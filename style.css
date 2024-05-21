@@ -1,0 +1,14 @@
+:root {
+    --primary-color-1: #0B162C;
+    --primary-color-2: #1C2942;
+    --primary-color-3: #3B556D;
+    --primary-color-4: #5FC2BA;
+    --primary-color-5: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Source Sans 3", sans-serif;
+}
