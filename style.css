@@ -80,9 +80,18 @@ header {
     margin-top: 7rem;
 }
 
+h1 {
+    font-family: var(--primary-font);
+    font-size: 6rem;
+}
+
+header p {
+    font-size: 2rem;
+}
+
 /* PROJECTS */
 
-h2 {
+#project-title {
     display: flex;
     justify-content: center;
     font-size: 5rem;
@@ -141,7 +150,13 @@ h2 {
 
 /* COMPETENCES */
 
-
+#skills-title {
+    display: flex;
+    justify-content: center;
+    font-size: 5rem;
+    font-family: var(--primary-font);
+    color: var(--primary-color-1);
+}
 
 /* ABOUT */ 
 
