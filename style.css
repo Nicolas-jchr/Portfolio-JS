@@ -12,3 +12,54 @@
     box-sizing: border-box;
     font-family: "Source Sans 3", sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/** NAVBAR **/
+
+nav {
+    width: 100%;
+    background-color: var(--primary-color-2);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-color-2);
+    color: var(--primary-color-5);
+}
+
+.navbar-left {
+    color: var(--primary-color-5);
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.pages {
+    display: flex;
+}
+
+.pages ul {
+    display: flex;
+    list-style: none;
+}
+
+.pages ul li {
+    margin: 0 15px;
+}
+
+.pages ul li a {
+    color: var(--primary-color-5);
+    text-decoration: none;
+}
+
+/* HEADER */ 
+
