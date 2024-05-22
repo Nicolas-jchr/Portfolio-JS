@@ -134,30 +134,32 @@ header p {
 
 .project-cases article {
     flex: 1 1 calc(33.333% - 40px);
-    max-width: calc(33.333% - 40px);
+    max-width: calc(33.333% - 100px);
     background-color: var(--primary-color-3);
     border-radius: 10px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
     padding: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .project-cases img {
     width: 100%;
-    height: 70%;
+    height: 80%;
     object-fit: cover;
     border-bottom: 2px solid var(--primary-color-1);
 }
 
 .project-cases button {
-    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 2.5rem;
     font-family: var(--secondary-font);
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 20px;
     background-color: var(--primary-color-1);
     color: var(--primary-color-5);
     border: none;
@@ -235,6 +237,15 @@ header p {
     background-color: var(--primary-color-1);
 }
 
+#about h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+
 #about p {
     display: flex;
     flex-direction: row;
@@ -277,7 +288,8 @@ header p {
     text-align: center;
     transition: all 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
-    width: 10rem;
+    width: 15rem;
+    margin-bottom: 3rem;
 }
 
 .btn-download:hover {
