@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 :root {
     --primary-color-1: #0B162C;
     --primary-color-2: #1C2942;
@@ -9,6 +9,7 @@
     --primary-color-5: #FFFFFF;
     --primary-font: "Poetsen One";
     --secondary-font: "Oswald";
+    --tercery-font: "Mochiy Pop One";
 }
 
 * {
@@ -95,7 +96,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--primary-font);
+    font-family: var(--tercery-font);
     color: var(--primary-color-5);
 }
 
@@ -156,7 +157,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--primary-font);
+    font-family: var(--tercery-font);
     color: var(--primary-color-1);
 }
 
@@ -172,7 +173,7 @@ header p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     width: 200px;
     height: 200px;
     border: 1px solid #ccc;
@@ -181,17 +182,19 @@ header p {
     text-align: center;
     background-color: var(--primary-color-1);
     transition: transform 0.3s ease;
+    padding: 10px; 
 }
 
 .skill-card img {
-    width: 300px;
-    height: 300px;
+    width: 200px; 
+    height: 140px;
+    margin-bottom: 10px; 
 }
 
 .skill-card p {
     font-family: var(--secondary-font);
     margin: 0;
-    font-size: 2rem;
+    font-size: 1.6rem; 
     color: var(--primary-color-5);
 }
 
@@ -199,27 +202,27 @@ header p {
     transform: translateY(-6px);
 }
 
-
 /* ABOUT */ 
 
 #about-title {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--primary-font);
-    color: var(--primary-color-1);
+    font-family: var(--tercery-font);
+    color: var(--primary-color-5);
 }
 
 .about {
-    background-color: var(--primary-color-4);
+    background-color: var(--primary-color-1);
 }
 
 .about p {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-family: var(--secondary-font);
+    color: var(--primary-color-5);
 }
 
 .about a {
@@ -228,6 +231,31 @@ header p {
     text-decoration: none;
 }
 
+.btn-download {
+    display: inline-block;
+    padding: 10px 15px; 
+    font-size: 1.4rem; 
+    font-family: var(--secondary-font);
+    color: var(--primary-color-5);
+    background: linear-gradient(90deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
+    border: none;
+    border-radius: 30px; 
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.btn-download:hover {
+    background: linear-gradient(90deg, var(--primary-color-2) 0%, var(--primary-color-3) 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.btn-download:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
 
 /* CONTACT */ 
 
@@ -235,7 +263,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--primary-font);
+    font-family: var(--tercery-font);
     color: var(--primary-color-1);
 }
 
@@ -309,7 +337,20 @@ footer {
     flex-direction: row;
     justify-content: space-around;
     text-align: center;
+    background-color: var(--primary-color-1);
+    color: var(--primary-color-5);
+    height: auto;
 }
 
+footer .social a img {
+    width: 200px; 
+    height: 200px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .social a img:hover {
+    transform: scale(2); 
+    filter: brightness(1.2); 
+}
 
 modifier : FRONT END ET BACK END 
