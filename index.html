@@ -37,26 +37,26 @@
             <h2 id="project-title">Mes projets</h2>
             <!--Séparation à mettre-->
             <div class="project-cases">
-            <article>
-            <img src="/assets/projet1.png" alt="Projet1" />
-            <button>En savoir plus</button>
-            </article>
-            <article>
-            <img src="/assets/projet2.svg" alt="Projet2" />
-            <button>En savoir plus</button>
-            </article>
-            <article>
-            <img src="/assets/protojam.png" alt="Protojam" />
-            <button>En savoir plus</button>
-        </article>
-            <article>
-            <img src="/assets/soon.svg" alt="à venir" />
-            <button>En savoir plus</button>
-        </article>
-        <article>
-            <img src="/assets/soon.svg" alt="à venir" />
-            <button>En savoir plus</button>
-        </article>
+                <article>
+                    <img src="/assets/projet1.png" alt="Projet1" />
+                    <button onclick="openModal('modal1')">En savoir plus</button>
+                </article>
+                <article>
+                    <img src="/assets/projet2.svg" alt="Projet2" />
+                    <button onclick="openModal('modal2')">En savoir plus</button>
+                </article>
+                <article>
+                    <img src="/assets/protojam.png" alt="Protojam" />
+                    <button onclick="openModal('modal3')">En savoir plus</button>
+                </article>
+                <article>
+                    <img src="/assets/soon.svg" alt="à venir" />
+                    <button onclick="openModal('modal4')">En savoir plus</button>
+                </article>
+                <article>
+                    <img src="/assets/soon.svg" alt="à venir" />
+                    <button onclick="openModal('modal5')">En savoir plus</button>
+                </article>
         </div>
         </div>
     </section>
@@ -143,5 +143,55 @@
     </div>
     </footer>
     
+    <div class="modal" id="modal1">
+        <article class="modal-content">
+            <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+            <h2>Projet 1</h2>
+            <img src="/assets/projet1.png" alt="Projet1" />
+            <p>Description du Projet 1...</p>
+            <a href="https://github.com/Nicolas-jchr/projet1" target="_blank">Voir sur GitHub</a>
+        </article>
+    </div>
+    
+
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+            <h2>Projet 2</h2>
+            <p>Description du Projet 2...</p>
+            <a href="https://github.com/Nicolas-jchr/projet2" target="_blank">Voir sur GitHub</a>
+        </div>
+    </div>
+    
+
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal3')">&times;</span>
+            <h2>Protojam</h2>
+            <p>Description de Protojam...</p>
+            <a href="https://github.com/Nicolas-jchr/protojam" target="_blank">Voir sur GitHub</a>
+        </div>
+    </div>
+    
+
+    <div class="modal" id="modal4">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal4')">&times;</span>
+            <h2>À venir</h2>
+            <p>Description à venir...</p>
+            <a href="https://github.com/Nicolas-jchr/avenir" target="_blank">Voir sur GitHub</a>
+        </div>
+    </div>
+    
+
+    <div class="modal" id="modal5">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal5')">&times;</span>
+            <h2>À venir</h2>
+            <p>Description à venir...</p>
+            <a href="https://github.com/Nicolas-jchr/avenir" target="_blank">Voir sur GitHub</a>
+        </div>
+    </div>
+<script src="script.js"></script>
 </body>
 </html>
