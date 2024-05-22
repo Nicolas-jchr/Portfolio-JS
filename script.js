@@ -14,11 +14,22 @@ function closeModal(modalId) {
     }, 300);
 }
 
+function closeAllModals() {
+    const modals = document.getElementsByClassName('modal');
+    for (let i = 0; i < modals.length; i++) {
+        modals[i].classList.remove('show');
+        setTimeout(function() {
+            modals[i].style.display = "none";
+        }, 300);
+    }
+}
+
 window.onclick = function(event) {
     const modals = document.getElementsByClassName('modal');
-    for (const i = 0; i < modals.length; i++) {
+    for (let i = 0; i < modals.length; i++) {
         if (event.target == modals[i]) {
-            closeModal(modals[i].id);
+            closeAllModals();
+            break;
         }
     }
 }

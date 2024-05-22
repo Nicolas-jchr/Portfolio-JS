@@ -381,27 +381,49 @@ header p {
 }
 
 
-/* FOOTER */ 
+/* FOOTER */
 
 footer {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
     background-color: var(--primary-color-1);
     color: var(--primary-color-5);
-    height: auto;
+    padding: 20px; /* Add padding for better spacing */
 }
 
-footer .social a img {
-    width: 200px; 
-    height: 200px;
+footer .section {
+    flex: 1; 
+    padding: 0 10px; 
+}
+
+footer .section img {
+    width: 150px;
+    height: 150px;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-footer .social a img:hover {
-    transform: scale(2); 
-    filter: brightness(1.2); 
+footer .section:hover img {
+    transform: scale(1.7);
+    filter: brightness(1.2);
+}
+
+footer .section p {
+    margin: 5px 0;
+    font-size: 1.2rem;
+}
+
+footer .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .localisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* MODALS */
@@ -541,6 +563,9 @@ footer .social a img:hover {
     color: var(--primary-color-4); 
 }
 
-
+.modal h3 {
+    font-family: var(--primary-font);
+    color: var(--primary-color-2);
+}
 
 modifier : FRONT END ET BACK END 
