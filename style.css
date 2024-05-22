@@ -38,6 +38,12 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    opacity: 0.8; /* Initial opacity */
+    transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+nav:hover {
+    opacity: 1; /* Fully opaque when hovered */
 }
 
 .navbar {
@@ -45,7 +51,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--primary-color-2);
+    background-color: var(--primary-color-2); /* Ensure background color remains the same */
     color: var(--primary-color-5);
 }
 
@@ -516,6 +522,7 @@ footer .social a img:hover {
 }
 
 .modal-content .link-container img {
+    background-color: var(--primary-color-2);
     margin-bottom: 5px; 
     width: 120px; 
     height: 120px;
