@@ -13,7 +13,7 @@
     --primary-font: "Poetsen One";
     --secondary-font: "Oswald";
     --tercery-font: "Mochiy Pop One";
-    --font: "Exo"
+    --font: "Exo";
 }
 
 * {
@@ -48,6 +48,16 @@ nav {
 
 nav:hover {
     opacity: 1; 
+}
+
+.nav-icon {
+    display: none;
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-right ul li a span {
+    display: inline;
 }
 
 .navbar {
@@ -571,4 +581,234 @@ footer .localisation {
 .modal h3 {
     font-family: var(--primary-font);
     color: var(--primary-color-2);
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width: 900px) {
+
+    /* NAVBAR */
+    .navbar-left {
+        font-size: 1em;
+    }
+
+    .navbar-right ul {
+        align-items: center;
+        padding: 0;
+    }
+
+    .navbar-right ul li {
+        margin: 10px 0;
+    }
+
+    .navbar-right ul li a {
+        font-size: 1rem;
+        padding: 8px 10px;
+    }
+
+    /* HEADER */
+    header {
+        padding: 10px;
+    }
+
+    #profil-picture {
+        height: 15rem;
+        margin-top: 5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    header p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    /* PROJECTS */
+    #project-title {
+        font-size: 3rem;
+    }
+
+    .project-cases {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-cases article {
+        max-width: 100%;
+        flex: 1 1 100%;
+    }
+
+    .project-cases button {
+        font-size: 1.4rem;
+        padding: 8px 16px;
+    }
+
+    /* COMPETENCES */
+    #skills-title {
+        font-size: 3rem;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .skill-card {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    .skill-card img {
+        width: 100px;
+        height: auto;
+    }
+
+    .skill-card p {
+        font-size: 1.2rem;
+    }
+
+    /* ABOUT */
+    .about-title {
+        font-size: 3rem;
+    }
+
+    #about h3 {
+        font-size: 1.5rem;
+    }
+
+    #about p {
+        font-size: 1.2rem;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn-download {
+        font-size: 1.2rem;
+        width: 12rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* CONTACT */
+    .contact-title {
+        font-size: 3rem;
+    }
+
+    #contact label {
+        font-size: 1.5rem;
+    }
+
+    #contact input,
+    #contact textarea {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    #contact textarea {
+        height: 100px;
+    }
+
+    #contact button {
+        font-size: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /* FOOTER */
+    footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer .section {
+        flex: 1 1 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    footer .section img {
+        width: 50px;
+        height: 50px;
+    }
+
+    footer .section p {
+        font-size: 1rem;
+    }
+
+    footer .localisation p {
+        display: block;
+        text-align: center;
+    }
+
+    footer .localisation .france-flag {
+        margin-bottom: 5px;
+    }
+
+    /* MODALS */
+    .modal-content {
+        width: 90%;
+    }
+
+    .modal-content img {
+        width: 100%;
+    }
+
+    .modal-content h2 {
+        font-size: 2rem;
+    }
+
+    .modal-content p {
+        font-size: 1.2rem;
+    }
+
+    .modal-content .skills img {
+        width: 100px;
+        height: auto;
+    }
+
+    .modal-content .link-container a img {
+        width: 60px;
+        height: auto;
+    }
+
+    .modal-content .link-container a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-left {
+        display: none;
+    }
+
+    .navbar-right ul {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navbar-right ul li {
+        margin: 0;
+    }
+
+    .navbar-right ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .navbar-right ul li a .nav-icon {
+        display: inline-block;
+        margin-right: 0;
+        width: 100px; 
+        height: 100px;
+    }
+
+    .navbar-right ul li a span {
+        display: none;
+    }
 }
