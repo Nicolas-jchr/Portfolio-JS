@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -11,9 +10,8 @@
     --primary-color-4: #5FC2BA;
     --primary-color-5: #FFFFFF;
     --primary-font: "Poetsen One";
-    --secondary-font: "Oswald";
-    --tercery-font: "Mochiy Pop One";
-    --font: "Exo";
+    --font-2: "Oswald";
+    --font-3: "Exo";
 }
 
 * {
@@ -31,7 +29,7 @@ body {
 }
 
 p, a {
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
 }
 
 /** NAVBAR **/
@@ -44,6 +42,10 @@ nav {
     left: 0;
     opacity: 0.8; 
     transition: opacity 0.3s ease;
+}
+
+nav span {
+    font-family: var(--font-2);
 }
 
 nav:hover {
@@ -73,7 +75,7 @@ nav:hover {
     color: var(--primary-color-5);
     text-decoration: none;
     font-size: 1.5em;
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
 }
 
 .navbar-right ul {
@@ -90,7 +92,7 @@ nav:hover {
     color: var(--primary-color-5);
     text-decoration: none;
     font-size: 1.5rem;
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
     padding: 10px 15px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -135,7 +137,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--font);
+    font-family: var(--font-3);
     color: var(--primary-color-5);
 }
 
@@ -175,7 +177,7 @@ header p {
 
 .project-cases button {
     font-size: 1.8rem;
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
     margin-top: 10px;
     padding: 10px 20px;
     background-color: var(--primary-color-1);
@@ -197,7 +199,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--font);
+    font-family: var(--font-3);
     color: var(--primary-color-1);
 }
 
@@ -232,7 +234,7 @@ header p {
 }
 
 .skill-card p {
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
     margin: 0;
     font-size: 1.6rem; 
     color: var(--primary-color-5);
@@ -248,7 +250,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--font);
+    font-family: var(--font-3);
     color: var(--primary-color-5);
 }
 
@@ -271,7 +273,7 @@ header p {
     justify-content: center;
     text-align: center;
     font-size: 1.5rem;
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
     color: var(--primary-color-5);
     padding-left: 20rem;
     padding-right: 20rem;
@@ -298,7 +300,7 @@ header p {
     text-align: center;
     padding: 1rem 2rem; 
     font-size: 1.4rem; 
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
     color: var(--primary-color-5);
     background: linear-gradient(90deg, var(--primary-color-1) 0%, var(--primary-color-2) 100%);
     border: none;
@@ -328,7 +330,7 @@ header p {
     display: flex;
     justify-content: center;
     font-size: 5rem;
-    font-family: var(--font);
+    font-family: var(--font-3);
     color: var(--primary-color-1);
 }
 
@@ -351,7 +353,7 @@ header p {
     margin-bottom: 0.5rem;
     color: var(--primary-color-1);
     font-weight: bold;
-    font-family: var(--secondary-font);
+    font-family: var(--font-2);
     font-size: 2rem;
 }
 
@@ -779,6 +781,12 @@ footer .localisation {
 }
 
 @media screen and (max-width: 600px) {
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        height: 5rem;
+    }
     .navbar-left {
         display: none;
     }
@@ -804,8 +812,8 @@ footer .localisation {
     .navbar-right ul li a .nav-icon {
         display: inline-block;
         margin-right: 0;
-        width: 100px; 
-        height: 100px;
+        width: 150px; 
+        height: 150px;
     }
 
     .navbar-right ul li a span {
